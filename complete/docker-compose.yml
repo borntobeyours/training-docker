@@ -11,7 +11,7 @@ services:
 
    # Expose port 8000 to other containers (not to the host of the machine)
    expose:
-     - "8585"
+     - "9090"
 
    # Mount the web directory within the container at /home/flask/app/web
    volumes:
@@ -55,7 +55,7 @@ services:
 
    # Expose port 80 to the host machine
    ports:
-     - "85:85"
+     - "800:80"
    deploy:
      mode: replicated
      replicas: 3
@@ -82,4 +82,4 @@ services:
 
    # Expose port 5432 to other Docker containers
    expose:
-     - "5432"
+     - "6432"
